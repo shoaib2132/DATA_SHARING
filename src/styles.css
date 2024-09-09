@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('./assets/Css/prime-checkbox.css');
+@import url('./assets/Css/prime-dialog.css');
+@import url('./assets/Css/prime-dropdown.css');
+@import url('./assets/Css/prime-input.css');
+@import url('./assets/Css/prime-radiobtn.css');
+@import url('./assets/Css/prime-table.css');
+@import url('./assets/Css/prime-tabview.css');
+@import url('./assets/Css/prime-sidebar.css');
+@import url('./assets/Css/prime-carousel.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Poppins', sans-serif !important;
+    background-color: #eff3f8;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

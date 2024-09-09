@@ -1,0 +1,92 @@
+.p-datatable .p-datatable-thead>tr>th {
+  padding: 8px 10px !important;
+  font-size: 13px !important;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+/* .pi-plus-circle,
+.pi-times-circle,
+.pi-check {
+  font-size: 13px !important;
+
+} */
+
+.prime-table .pi{
+  font-size: 11px !important;
+}
+.prime-table .p-tag .p-tag-icon {
+  margin-right: 0rem;
+}
+
+
+.p-datatable .p-datatable-tbody>tr>td {
+  padding: 5px 10px !important;
+  font-size: 13px !important;
+}
+
+.p-datatable-scrollable-table>.p-datatable-thead {
+  position: static !important;
+  top: 0 !important;
+  z-index: 1 !important;
+}
+
+.p-paginator .p-paginator-current {
+  min-width: 10px !important;
+  height: 11px !important;
+  margin: 0px 14px !important;
+  padding: 0 10px !important;
+  font-size: 13px !important;
+}
+
+.p-paginator .p-paginator-first,
+.p-paginator .p-paginator-prev,
+.p-paginator .p-paginator-next,
+.p-paginator .p-paginator-last {
+
+  min-width: 14px !important;
+  height: 10px !important;
+  margin: 8px !important;
+
+}
+
+.p-paginator .p-paginator-pages .p-paginator-page {
+  min-width: 26px !important;
+  height: 26px !important;
+  margin: 0px !important;
+  font-size: 15px !important;
+}
+
+.p-paginator .p-dropdown {
+
+  height: 26px !important;
+
+}
+
+.p-overlaypanel .p-overlaypanel-content {
+  padding: 6px 14px !important;
+  font-size: 13px;
+  font-family: 'Poppins', sans-serif !important;
+
+}
+
+.p-paginator {
+  justify-content: end !important;
+}
+
+.prime-table .p-button.p-button-text {
+  background-color: #093149 !important;
+  border-color: transparent !important;
+  color: #fff !important;
+  border-radius: 50% !important;
+  width: auto !important;
+  padding: 0px 7px !important;
+  margin-right: 5px !important;
+}
+.p-paginator  .p-inputtext {
+  border: none !important;
+}
+:host ::ng-deep .p-datatable .p-datatable-thead > tr > th {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0rem;
+}
