@@ -1,0 +1,12 @@
+.imagelogo{
+    background-image: url("../../../assets/Images/Common-Image/tsr_darashaw_logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.imageaside{
+    background-image: url("../../../assets/Images/Common-Image/image_aside.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
