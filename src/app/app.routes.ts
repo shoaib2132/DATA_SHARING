@@ -9,6 +9,7 @@ import { AdminForgetPasswordComponent } from '../Common/Login-Page/admin-forget-
 import { UserForgetPasswordComponent } from '../Common/Login-Page/user-forget-password/user-forget-password.component';
 import { AdminDashboardComponent } from '../Common/Dashboard-Page/admin-dashboard/admin-dashboard.component';
 import { UserDashboardComponent } from '../Common/Dashboard-Page/admin-dashboard/user-dashboard/user-dashboard.component';
+import { UserLayoutComponent } from '../Common/Layout-Page/user-layout/user-layout.component';
 
 
 export const routes: Routes = [
@@ -16,7 +17,7 @@ export const routes: Routes = [
     {
         path: 'user', 
         canActivate:[userAuthGuard],
-        component: UserLoginComponent,
+        component: UserLayoutComponent,
         children: [
           { path: 'login', component: UserLoginComponent },
           { path: 'dashboard', component: UserDashboardComponent },
@@ -38,4 +39,5 @@ export const routes: Routes = [
     imports: [RouterModule.forRoot(routes)],
     exports: [RouterModule]
   })
+  
   export class AppRoutingModule { }
