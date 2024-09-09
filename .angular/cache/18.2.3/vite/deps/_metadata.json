@@ -1,31 +1,40 @@
 {
-  "hash": "3b56fb3b",
-  "configHash": "24907731",
-  "lockfileHash": "da08a45c",
-  "browserHash": "57363840",
+  "hash": "2940d311",
+  "configHash": "dd77d271",
+  "lockfileHash": "d3c78317",
+  "browserHash": "2c06d733",
   "optimized": {
     "@angular/core": {
       "src": "../../../../../node_modules/@angular/core/fesm2022/core.mjs",
       "file": "@angular_core.js",
-      "fileHash": "9ee1b461",
+      "fileHash": "fccb9847",
       "needsInterop": false
     },
     "@angular/platform-browser": {
       "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
       "file": "@angular_platform-browser.js",
-      "fileHash": "bbd2de10",
+      "fileHash": "dc18ca3d",
       "needsInterop": false
     },
     "@angular/router": {
       "src": "../../../../../node_modules/@angular/router/fesm2022/router.mjs",
       "file": "@angular_router.js",
-      "fileHash": "36d716f3",
+      "fileHash": "c5752c49",
+      "needsInterop": false
+    },
+    "primeng/button": {
+      "src": "../../../../../node_modules/primeng/fesm2022/primeng-button.mjs",
+      "file": "primeng_button.js",
+      "fileHash": "b4748415",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-3PGPYDTF": {
-      "file": "chunk-3PGPYDTF.js"
+    "chunk-NGXQWJZZ": {
+      "file": "chunk-NGXQWJZZ.js"
+    },
+    "chunk-OI3ZUGRY": {
+      "file": "chunk-OI3ZUGRY.js"
     },
     "chunk-IKJ4S2J2": {
       "file": "chunk-IKJ4S2J2.js"
