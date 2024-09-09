@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-/* @import url('./assets/Css/prime-checkbox.css');
+@import url('./assets/Css/prime-checkbox.css');
 @import url('./assets/Css/prime-dialog.css');
 @import url('./assets/Css/prime-dropdown.css');
 @import url('./assets/Css/prime-input.css');
@@ -8,13 +8,10 @@
 @import url('./assets/Css/prime-tabview.css');
 @import url('./assets/Css/prime-sidebar.css');
 @import url('./assets/Css/prime-carousel.css');
-@import "primeicons/primeicons.css";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
-@import "~primeng/resources/themes/saga-blue/theme.css";
-@import "~primeng/resources/primeng.min.css"; */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 body {
     font-family: 'Poppins', sans-serif !important;
