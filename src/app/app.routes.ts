@@ -23,6 +23,7 @@ export const routes: Routes = [
           { path: 'login', component: UserLoginComponent },
           { path: 'dashboard', component: UserDashboardComponent },
           { path: 'forgetpassword', component: UserForgetPasswordComponent },
+          { path: 'clientpage', component: ClientPageComponent },
       ]},
       {
         path: 'admin', 
@@ -32,7 +33,7 @@ export const routes: Routes = [
           { path: 'login', component: AdminLoginComponent },
           { path: 'dashboard', component: AdminDashboardComponent },
           { path: 'forgetpassword', component: AdminForgetPasswordComponent },
-          { path: 'clientpage', component: ClientPageComponent },
+         
         ]}
     
 ];
