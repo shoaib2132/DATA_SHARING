@@ -10,6 +10,7 @@ import { UserForgetPasswordComponent } from '../Common/Login-Page/user-forget-pa
 import { AdminDashboardComponent } from '../Common/Dashboard-Page/admin-dashboard/admin-dashboard.component';
 import { UserDashboardComponent } from '../Common/Dashboard-Page/admin-dashboard/user-dashboard/user-dashboard.component';
 import { UserLayoutComponent } from '../Common/Layout-Page/user-layout/user-layout.component';
+import { ClientPageComponent } from './Masters/client-page/client-page.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'admin/login', pathMatch: 'full' },
@@ -31,6 +32,7 @@ export const routes: Routes = [
       { path: 'login', component: AdminLoginComponent },
       { path: 'dashboard', component: AdminDashboardComponent },
       { path: 'forgetpassword', component: AdminForgetPasswordComponent },
+      { path: 'clientpage', component: ClientPageComponent },
     ],
   },
 ];

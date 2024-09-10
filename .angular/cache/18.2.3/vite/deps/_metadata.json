@@ -1,31 +1,55 @@
 {
-  "hash": "94cb6294",
-  "configHash": "04ba5bd4",
+  "hash": "5bf3da8d",
+  "configHash": "9a235c59",
   "lockfileHash": "2b826f3e",
-  "browserHash": "7500555c",
+  "browserHash": "fb5da0d1",
   "optimized": {
     "@angular/core": {
       "src": "../../../../../node_modules/@angular/core/fesm2022/core.mjs",
       "file": "@angular_core.js",
-      "fileHash": "04465558",
+      "fileHash": "75d0e8a8",
       "needsInterop": false
     },
     "@angular/platform-browser": {
       "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
       "file": "@angular_platform-browser.js",
-      "fileHash": "2fa54392",
+      "fileHash": "5ebe0ee8",
       "needsInterop": false
     },
     "@angular/router": {
       "src": "../../../../../node_modules/@angular/router/fesm2022/router.mjs",
       "file": "@angular_router.js",
-      "fileHash": "da206787",
+      "fileHash": "f6e088e9",
+      "needsInterop": false
+    },
+    "primeng/overlaypanel": {
+      "src": "../../../../../node_modules/primeng/fesm2022/primeng-overlaypanel.mjs",
+      "file": "primeng_overlaypanel.js",
+      "fileHash": "449301c1",
+      "needsInterop": false
+    },
+    "primeng/api": {
+      "src": "../../../../../node_modules/primeng/fesm2022/primeng-api.mjs",
+      "file": "primeng_api.js",
+      "fileHash": "3b4b24c7",
+      "needsInterop": false
+    },
+    "@angular/common": {
+      "src": "../../../../../node_modules/@angular/common/fesm2022/common.mjs",
+      "file": "@angular_common.js",
+      "fileHash": "e4e8c50b",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-3PGPYDTF": {
-      "file": "chunk-3PGPYDTF.js"
+    "chunk-LBXA43VN": {
+      "file": "chunk-LBXA43VN.js"
+    },
+    "chunk-XD3Y76EE": {
+      "file": "chunk-XD3Y76EE.js"
+    },
+    "chunk-P3QS4K2S": {
+      "file": "chunk-P3QS4K2S.js"
     },
     "chunk-IKJ4S2J2": {
       "file": "chunk-IKJ4S2J2.js"
