@@ -1,1 +1,19 @@
-<p>client-page works!</p>
+
+<p-card header="Client Configure">
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-4">
+        <div>
+            <label for="CLIENT_NAME">Client Name</label>
+            <input 
+                pInputText 
+                id="CLIENT_NAME" 
+                [(ngModel)]="CLIENT_NAME" />
+        </div>
+        <div>
+            <div class="mt-5">
+                <p-checkbox [(ngModel)]="ACTIVE" value="ACTIVE"  inputId="ACTIVE" />
+                <label for="ACTIVE" class="ml-2">Active</label>
+            </div>
+            
+        </div>
+    </div>
+</p-card>

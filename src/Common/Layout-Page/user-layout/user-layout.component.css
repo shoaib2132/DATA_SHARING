@@ -142,7 +142,7 @@
     letter-spacing: 0.15px;
 }
 .menu-vertical .menu-item .menu-link:hover{
-    background-color: #F7F8F9;
+    /* background-color: #F7F8F9; */
 }
 
 .menu-vertical .menu-item .menu-link,
@@ -157,7 +157,7 @@
 .bg-menu-theme .menu-link,
 .bg-menu-theme .menu-horizontal-prev,
 .bg-menu-theme .menu-horizontal-next {
-    color: #384551;
+    color: #f5f5f5;
     cursor: pointer;
 }
 
@@ -169,7 +169,7 @@
     flex-grow: 0;
     flex-shrink: 0;
     margin-right: 0.5rem;
-    font-size: 1.05rem;
+    font-size: 26px;
 }
 
 .text-truncate {
@@ -315,14 +315,14 @@
 }
 
  .layout-navbar.navbar-detached {
-    width: calc(100% - 18.5rem)
+    width: calc(100% - 15.5rem)
 }
 /* .layout-menu-fixed:not(.layout-menu-collapsed) .layout-page {
     padding-left: 18.25rem;
     } */
 
 .layout-navbar {
-    left: 16.05rem;
+    left: 13.05rem;
     position: fixed;
     right: 0;
     top: 0;
@@ -340,14 +340,14 @@
 }
 
 .bg-navbar-theme {
-    /* background-color: #fff !important;
-    color: #697a8d; */
-    background-color: #12558d !important;
-  color: #f5f5f5;
+    background-color: #fff !important;
+    color: #697a8d;
+    /* background-color: #12558d !important;
+  color: #f5f5f5; */
 }
 .layout-wrapper:not(.layout-horizontal):not(.layout-without-menu) .layout-page {
     padding-top: 76px !important;
-    padding-left: 16.25rem;
+    padding-left: 13.25rem;
     }
 
 .layout-navbar .navbar-nav-right {
@@ -359,12 +359,6 @@
     width: 100%;
 }
 
-.content-wrapper,
-.content-wrapper>*,
-.layout-menu,
-.layout-page {
-    min-height: 1px;
-}
 
 .content-wrapper {
     -ms-flex-align: stretch; 
@@ -399,6 +393,8 @@
     left: 0;
     margin-right: 0 !important;
     margin-left: 0 !important;
+    background-color: #233682 !important;
+  color: #f5f5f5;
 }
 .menu .menu-sub {
     transition: background-color .3s;
@@ -418,11 +414,12 @@
     border-radius: 4px;
   }
   .scrollcontainer::-webkit-scrollbar-thumb {
-    background: rgba(87, 82, 82, 0.2); 
+    /* background: rgba(87, 82, 82, 0.2);  */
+    background: rgba(231, 231, 231, 0.2); 
   } 
   .cover-bar {
     /* position: absolute; */
-    background: #fff;
+    background: #233682;
     height: 100%;  
     top: 0;
     right: 0;
