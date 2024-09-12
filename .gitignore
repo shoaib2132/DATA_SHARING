@@ -1,13 +1,66 @@
-# Compiled output
-/dist
-/build
-
 # Node modules
-/node_modules
+node_modules/
+
+# Build output (Angular specific)
+dist/
+out-tsc/
+
+# Compiled source
+*.tsbuildinfo
+
+# Dependency directories
+jspm_packages/
+# Node modules (includes PrimeNG and other dependencies)
+node_modules/
+
+# Build output directory (includes chunk files)
+dist/
+out-tsc/
+
+# Compiled source
+*.tsbuildinfo
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+src/environments/environment*.ts
+
+# IDE and editor folders
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+.DS_Store
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+src/environments/environment*.ts
+
+# Operating system specific files
+Thumbs.db
+Desktop.ini
+
+# Miscellaneous
+*.pem
+*.key
+*.crt
+*.env
+*.local
+
+# Custom build script files (if any)
+build/
+scripts/
 
 #package.json
-/package.json
-/package-lock.json
+package.json
+package-lock.json
 
 # Log files
 *.log
