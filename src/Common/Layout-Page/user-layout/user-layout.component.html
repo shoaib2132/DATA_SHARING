@@ -8,23 +8,23 @@
         <!-- Top Navbar section -->
         <nav class="layout-navbar navbar navbar-expand-xl navbar-detached
          align-items-center bg-navbar-theme container-fluid">
-          <div class='navbar-nav-right flex align-items-center'>
-            <div class='navbar-nav align-items-center w-80'>
+          <div class='navbar-nav-right flex justify-end w-full'>
+            <div class='navbar-nav align-items-center w-60'>
               <div
-                class="origin-left w-full h-10 imagelogo cursor-pointer duration-300"
+                class="origin-right w-full h-8 imagelogo cursor-pointer duration-300"
               ></div>
             </div>
-            <div class="navbar-nav flex-row align-items-center ms-auto">
+            <!-- <div class="navbar-nav flex-row align-items-center ms-auto">
               <div class="w-10 h-10 justify-center items-start gap-2.5 inline-flex">
-                <!-- <div class=" hide-arrow" onClick={(e) => op.current.toggle(e)}> -->
+                <p-button (onClick)="op.toggle($event)" icon="pi pi-share-alt" label="Share" />
+
                 <div class=" hide-arrow" >
-                  <div class="avatar avatar-online" (click)="op.toggle($event)">
+                  <div class="avatar avatar-online">
                     <i class="pi pi-user w-px-40 h-auto rounded-circle" ></i>
-                   
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
           <p-overlayPanel #op>
             <ng-template pTemplate>
@@ -74,7 +74,6 @@
               <div class="d-none d-lg-inline-block">
                 <a class="footer-link Text_Main me-4" >Privacy Policy</a>
                 <a class="footer-link Text_Main" >Terms and Conditions</a>
-                
               </div>
             </div>
         </footer>
@@ -82,7 +81,7 @@
       </div>
       <aside
       id="layout-menu"
-      class= "w-52 duration-300 relative bg-white layout-menu menu-vertical menu bg-menu-theme">
+      class= "w-52 hideContainer duration-300 relative bg-white layout-menu menu-vertical menu bg-menu-theme">
       <!-- <img
         src="../../../assets/images/sidebar/bxs-chevron-left.png"
         class= "absolute cursor-pointer rounded-full z-10  -right-3 top-4 w-10 border-8  border-f1eee9"/> -->
@@ -93,6 +92,9 @@
       </div> -->
       <div class="my-5">
         <div class="flex justify-center">
+          <!-- <div
+                class="origin-left w-full h-10 imagelogo cursor-pointer duration-300"
+              ></div> -->
             <div class="border-2 border-bg-yellow-300 bg-yellow-900 rounded-full p-6">
               <span class="text-2xl w-full text-center">JP</span>
             </div>
@@ -100,14 +102,14 @@
         <div>
           <p class="text-xl w-full text-center mb-2">USERNAME</p>
           <p class="text-sm w-full text-center mb-2">(Employee Role)</p>
-          <p class="text-xs text-center">Last Login : 10-Sep-2024 11:53:21</p>
+          <p class="text-xs text-center">Last Login : 10-Sep-2024</p>
         </div>
       </div>
       <div class="mt-5">
         <ul class="menu-inner py-1 ps scrollcontainer">
-            <li *ngFor="let data of MENULIST"  class="menu-item w-full" 
+            <li *ngFor="let data of MENULIST;let i=index;"  class="menu-item w-full" 
              [ngClass]="[ data.IS_SELECTED === true ? 'active' : '' ]">
-                <div class="menu-link ">
+                <div class="menu-link " (click)="setHighlighted(data, i, data.MODULE_DESCRIPTION);">
                     <i class="menu-icon pi {{data.ICON}}"></i>
                     <div class=" w-full" >
                       <div class="text-truncate">
@@ -115,8 +117,21 @@
                       </div>
                     </div>
                 </div>
+                <ul class="dropdown" *ngIf="isShowSubMenu"
+                 [ngClass]="[ data.IS_SELECTED === true ? 'menu-sub' : '' ]">
+                  <li *ngFor="let subdata of data.DETAIL;let j=index;"  class="menu-item" 
+                  [ngClass]="[ subdata.IS_SELECTED === true ? 'active' : '' ]">
+                     <div class="menu-link ">
+                         <!-- <i class="menu-icon pi {{data.ICON}}"></i> -->
+                         <div class=" w-full" >
+                           <div class="text-truncate">
+                             {{subdata.FUNCTION_DESC}}
+                           </div>
+                         </div>
+                     </div>
+                 </li>
+                </ul>
             </li>
-          
           <div class="cover-bar"></div>
         </ul>
       </div>

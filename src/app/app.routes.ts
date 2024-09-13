@@ -15,12 +15,13 @@ import { AdminDashboardComponent } from '../Common/Dashboard/admin-dashboard/adm
 
 export const routes: Routes = [
     { path: '', redirectTo: 'admin/login', pathMatch: 'full' },
+    { path: 'user/login', component: UserLoginComponent },
     {
         path: 'user', 
         canActivate:[userAuthGuard],
         component: UserLayoutComponent,
         children: [
-          { path: 'login', component: UserLoginComponent },
+      
           { path: 'dashboard', component: UserDashboardComponent },
           { path: 'forgetpassword', component: UserForgetPasswordComponent },
           { path: 'clientpage', component: ClientPageComponent },
