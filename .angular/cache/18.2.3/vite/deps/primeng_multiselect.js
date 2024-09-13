@@ -12,6 +12,10 @@ import {
   AutoFocusModule
 } from "./chunk-YSRNCLKY.js";
 import {
+  Ripple,
+  RippleModule
+} from "./chunk-FQDTRQDF.js";
+import {
   animate,
   animation,
   style,
@@ -20,10 +24,6 @@ import {
   useAnimation
 } from "./chunk-5D5RAQYV.js";
 import {
-  Ripple,
-  RippleModule
-} from "./chunk-FQDTRQDF.js";
-import {
   TimesIcon
 } from "./chunk-CRSU2B2R.js";
 import {
@@ -31,9 +31,6 @@ import {
   ConnectedOverlayScrollHandler,
   DomHandler
 } from "./chunk-JPG43RVS.js";
-import {
-  NG_VALUE_ACCESSOR
-} from "./chunk-52DPISRT.js";
 import {
   FilterService,
   Footer,
@@ -47,6 +44,9 @@ import {
   UniqueComponentId,
   zindexutils
 } from "./chunk-P3OLHPFZ.js";
+import {
+  NG_VALUE_ACCESSOR
+} from "./chunk-52DPISRT.js";
 import {
   CommonModule,
   DOCUMENT,
