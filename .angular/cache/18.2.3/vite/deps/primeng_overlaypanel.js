@@ -1,14 +1,14 @@
 import {
+  Ripple,
+  RippleModule
+} from "./chunk-FQDTRQDF.js";
+import {
   animate,
   state,
   style,
   transition,
   trigger
 } from "./chunk-5D5RAQYV.js";
-import {
-  Ripple,
-  RippleModule
-} from "./chunk-FQDTRQDF.js";
 import {
   TimesIcon
 } from "./chunk-CRSU2B2R.js";
