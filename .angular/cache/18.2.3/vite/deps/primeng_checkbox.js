@@ -7,15 +7,15 @@ import {
 } from "./chunk-YSRNCLKY.js";
 import "./chunk-JPG43RVS.js";
 import {
+  NG_VALUE_ACCESSOR,
+  NgControl
+} from "./chunk-52DPISRT.js";
+import {
   ObjectUtils,
   PrimeNGConfig,
   PrimeTemplate,
   SharedModule
 } from "./chunk-P3OLHPFZ.js";
-import {
-  NG_VALUE_ACCESSOR,
-  NgControl
-} from "./chunk-52DPISRT.js";
 import {
   CommonModule,
   NgClass,
