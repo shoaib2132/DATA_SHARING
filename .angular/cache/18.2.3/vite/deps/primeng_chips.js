@@ -1,26 +1,26 @@
 import {
+  InputTextModule
+} from "./chunk-ZSLV6WHD.js";
+import {
   TimesCircleIcon
 } from "./chunk-MUQEERXQ.js";
+import {
+  TimesIcon
+} from "./chunk-CRSU2B2R.js";
 import {
   AutoFocus,
   AutoFocusModule
 } from "./chunk-YSRNCLKY.js";
-import {
-  TimesIcon
-} from "./chunk-CRSU2B2R.js";
 import "./chunk-JPG43RVS.js";
-import {
-  InputTextModule
-} from "./chunk-SPVCOZRZ.js";
-import {
-  NG_VALUE_ACCESSOR
-} from "./chunk-52DPISRT.js";
 import {
   PrimeNGConfig,
   PrimeTemplate,
   SharedModule,
   UniqueComponentId
 } from "./chunk-P3OLHPFZ.js";
+import {
+  NG_VALUE_ACCESSOR
+} from "./chunk-52DPISRT.js";
 import {
   CommonModule,
   DOCUMENT,
