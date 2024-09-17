@@ -1,16 +1,20 @@
-.p-radiobutton .p-radiobutton-box {
-    width: 18px !important;
-    height: 18px !important;
-    margin-top: 2px !important;
-}
-.p-radiobutton .p-radiobutton-box .p-radiobutton-icon {
-    width: 8px !important;
-    height: 8px !important;
-}
-.p-radiobutton .p-radiobutton-box.p-highlight {
-    border-color: #31499f !important;
-    background: #31499f !important;
-}
+/* radiobutton */
+    .p-checkbox.p-highlight .p-checkbox-box {
+        border-color: #8E724A;
+        background: #8E724A;
+    }
+    .p-checkbox .p-checkbox-box {
+        border: 1px solid #32475c38;
+        background: #ffffff;
+        width: 22px;
+        height: 22px;
+        color: #4b5563;
+        border-radius: 4px;
+        transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+    }
+    .p-checkbox-box.p-focus{
+        box-shadow: none;
+    }
 .p-disabled {
     background: #ced4dac2 !important;
 }
