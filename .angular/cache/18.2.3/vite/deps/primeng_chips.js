@@ -5,12 +5,12 @@ import {
   TimesCircleIcon
 } from "./chunk-MUQEERXQ.js";
 import {
+  TimesIcon
+} from "./chunk-CRSU2B2R.js";
+import {
   AutoFocus,
   AutoFocusModule
 } from "./chunk-YSRNCLKY.js";
-import {
-  TimesIcon
-} from "./chunk-CRSU2B2R.js";
 import "./chunk-JPG43RVS.js";
 import {
   PrimeNGConfig,
