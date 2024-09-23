@@ -8,9 +8,10 @@ import { UserLoginComponent } from '../Common/Login-Page/user-login/user-login.c
 import { AdminForgetPasswordComponent } from '../Common/Login-Page/admin-forget-password/admin-forget-password.component';
 import { UserForgetPasswordComponent } from '../Common/Login-Page/user-forget-password/user-forget-password.component';
 import { UserLayoutComponent } from '../Common/Layout-Page/user-layout/user-layout.component';
-import { ClientPageComponent } from './Masters/client-page/client-page.component';
+
 import { UserDashboardComponent } from '../Common/Dashboard/admin-dashboard/user-dashboard/user-dashboard.component';
 import { AdminDashboardComponent } from '../Common/Dashboard/admin-dashboard/admin-dashboard.component';
+import { ClientListComponent } from './Master/client-list/client-list.component';
 
 
 export const routes: Routes = [
@@ -24,7 +25,7 @@ export const routes: Routes = [
       
           { path: 'dashboard', component: UserDashboardComponent },
           { path: 'forgetpassword', component: UserForgetPasswordComponent },
-          { path: 'clientpage', component: ClientPageComponent },
+          { path: 'clientpagelist', component: ClientListComponent },
       ]},
       {
         path: 'admin', 

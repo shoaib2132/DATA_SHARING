@@ -4,9 +4,10 @@
     background-repeat: no-repeat;
 }
 .imageaside{
-    background-image: url("../../../assets/Images/Common-Image/image_aside.jpg");
+    background-image: url("../../../assets/Images/Common-Image/login_bg.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center;
     width: 100%;
     height: 100%;
 }
