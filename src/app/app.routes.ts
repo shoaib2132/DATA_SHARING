@@ -11,19 +11,21 @@ import { UserLayoutComponent } from '../Common/Layout-Page/user-layout/user-layo
 import { ClientPageComponent } from './Masters/client-page/client-page.component';
 import { UserDashboardComponent } from '../Common/Dashboard/admin-dashboard/user-dashboard/user-dashboard.component';
 import { AdminDashboardComponent } from '../Common/Dashboard/admin-dashboard/admin-dashboard.component';
-
-
 export const routes: Routes = [
     { path: '', redirectTo: 'admin/login', pathMatch: 'full' },
     { path: 'user/login', component: UserLoginComponent },
+    { path: 'user/login/tataplay', component: UserLoginComponent },
+    { path: 'user/login/axsis', component: UserLoginComponent },
+    { path: 'user/forgetpassword', component: UserForgetPasswordComponent },
     {
         path: 'user', 
         canActivate:[userAuthGuard],
         component: UserLayoutComponent,
         children: [
       
+    // { path: 'login/:client', component: ClientLoginComponent },
           { path: 'dashboard', component: UserDashboardComponent },
-          { path: 'forgetpassword', component: UserForgetPasswordComponent },
+          
           { path: 'clientpage', component: ClientPageComponent },
       ]},
       {
