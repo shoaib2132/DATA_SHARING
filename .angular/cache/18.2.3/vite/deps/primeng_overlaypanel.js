@@ -6,23 +6,16 @@ import {
   trigger
 } from "./chunk-5D5RAQYV.js";
 import {
-  Ripple,
-  RippleModule
-} from "./chunk-FQDTRQDF.js";
-import {
   TimesIcon
 } from "./chunk-CRSU2B2R.js";
+import {
+  Ripple,
+  RippleModule
+} from "./chunk-YI6IWC32.js";
 import {
   ConnectedOverlayScrollHandler,
   DomHandler
 } from "./chunk-JPG43RVS.js";
-import {
-  OverlayService,
-  PrimeNGConfig,
-  PrimeTemplate,
-  SharedModule,
-  zindexutils
-} from "./chunk-P3OLHPFZ.js";
 import {
   CommonModule,
   DOCUMENT,
@@ -32,6 +25,13 @@ import {
   NgTemplateOutlet,
   isPlatformBrowser
 } from "./chunk-X7PCTTRX.js";
+import {
+  OverlayService,
+  PrimeNGConfig,
+  PrimeTemplate,
+  SharedModule,
+  zindexutils
+} from "./chunk-P3OLHPFZ.js";
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
