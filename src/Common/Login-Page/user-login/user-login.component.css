@@ -1,7 +1,8 @@
 .imagelogo{
-    background-image: url("../../../assets/Images/Common-Image/tsr_darashaw_logo.png");
+    /* background-image: url("../../../assets/Images/Common-Image/tsr_darashaw_logo.png"); */
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center center;
 }
 .imageaside{
     background-image: url("../../../assets/Images/Common-Image/login_bg.png");
@@ -12,6 +13,7 @@
     background-position: center center;
 }
 .imageasidelogo{
+    background-image: url("../../../assets/Images/Common-Image/tsr_darashaw_logo.png");
     /* background-image: url("../../../assets/Images/Common-Image/tataplay_logo.png"); */
     background-size: contain;
     background-repeat: no-repeat;
