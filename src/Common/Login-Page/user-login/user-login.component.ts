@@ -15,16 +15,16 @@ test:any = "../../../assets/Images/Common-Image/tataplay_logo.png"
 ImageView:boolean = false;
 ImageView1:boolean = false;
 RouterUrl:any;
-currentPage: string | null = null;
+bankName: string | null = null;
+currentPage:any;
 
   constructor(private router: Router,public SharedService:SharedService,private ActivatedRoute:ActivatedRoute){
   }
   ngOnInit(){
     this.RouterUrl = this.ActivatedRoute.url;
-    this.RouterUrl.subscribe((urlSegments:any) => {
-console.log('urlSegments ->' , urlSegments)
-      this.currentPage = urlSegments.map((segment:any) => segment.path).join('/');
-console.log('currentPage ->' , this.currentPage)
+    this.ActivatedRoute.params.subscribe(params => {
+      this.bankName = params['bankName'];
+      // console.log('bankName ->' , this.bankName)
     });
    }
 
