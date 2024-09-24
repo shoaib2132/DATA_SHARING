@@ -1,57 +1,30 @@
-<div class="layout-wrapper layout-content-navbar flex">
-  <div class="layout-container">
-    <!-- <Navbar menuList={menuList} open={isNavBar} setOpen={setIsNavBar} /> -->
-
-    <div class="layout-page duration-300">
-      <!-- <div class={`layout-page ${!isNavBar ? "left-container duration-300" : "duration-300"}`}> -->
-<<<<<<< HEAD
+<div class='layout-wrapper layout-content-navbar flex'>
+  <div class='layout-container'>
+    <div class="layout-page">
       <!-- Top Navbar section -->
-      <nav
-        class="layout-navbar navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme container-fluid"
-      >
-        <div class="navbar-nav-right flex align-items-center">
-          <div class="navbar-nav align-items-center w-80">
-            <h6>Welcome</h6>
+      <nav class="layout-navbar navbar navbar-expand-xl navbar-detached
+         align-items-center bg-navbar-theme container-fluid">
+        <div class='navbar-nav-right flex justify-between w-full'>
+          <div class='navbar-nav align-items-center w-60'>
+            <div class="origin-right w-full h-8 imagelogo cursor-pointer duration-300"></div>
           </div>
           <div class="navbar-nav flex-row align-items-center ms-auto">
-            <div
-              class="w-10 h-10 justify-center items-start gap-2.5 inline-flex"
-            >
-              <!-- <div class=" hide-arrow" onClick={(e) => op.current.toggle(e)}> -->
-              <div class="hide-arrow">
-                <div class="avatar avatar-online" (click)="op.toggle($event)">
+            <div class="w-10 h-10 justify-center items-start gap-2.5 inline-flex">
+              <div class=" hide-arrow">
+                <div class="avatar avatar-online" (onClick)="op.toggle($event)">
                   <i class="pi pi-user w-px-40 h-auto rounded-circle"></i>
-=======
-        <!-- Top Navbar section -->
-        <nav class="layout-navbar navbar navbar-expand-xl navbar-detached
-         align-items-center bg-navbar-theme container-fluid">
-          <div class='navbar-nav-right flex justify-end w-full'>
-            <div class='navbar-nav align-items-center w-60'>
-              <div
-                class="origin-right w-full h-8 imagelogo cursor-pointer duration-300"
-              ></div>
-            </div>
-            <!-- <div class="navbar-nav flex-row align-items-center ms-auto">
-              <div class="w-10 h-10 justify-center items-start gap-2.5 inline-flex">
-                <p-button (onClick)="op.toggle($event)" icon="pi pi-share-alt" label="Share" />
-
-                <div class=" hide-arrow" >
-                  <div class="avatar avatar-online">
-                    <i class="pi pi-user w-px-40 h-auto rounded-circle" ></i>
-                  </div>
->>>>>>> 46c0bcc0ffece20550405d66cecb4c52c470901a
                 </div>
               </div>
-            </div> -->
+            </div>
           </div>
         </div>
         <p-overlayPanel #op>
           <ng-template pTemplate>
             <ul class="">
-              <li class="py-2">
+              <li class='py-2 '>
                 <div class="flex">
                   <div class="shrink-0 me-3">
-                    <div class="hide-arrow">
+                    <div class=" hide-arrow">
                       <div class="avatar avatar-online">
                         <i class="pi pi-user w-px-40 h-auto rounded-circle"></i>
                       </div>
@@ -68,7 +41,7 @@
               <li>
                 <hr />
               </li>
-              <li class="py-2 cursor-pointer">
+              <li class='py-2 cursor-pointer'>
                 <button class="dropdown-item">
                   <i class="pi pi-sign-out me-2"></i>
                   <span class="align-middle Table_Header">Logout</span>
@@ -77,121 +50,75 @@
             </ul>
           </ng-template>
         </p-overlayPanel>
+
       </nav>
       <!-- middel section -->
-      <div class="content-wrapper">
-        <div class="grow px-7 py-2 w-full">
-          <router-outlet></router-outlet>
-        </div>
-        <!-- footer section -->
-        <footer class="content-footer footer bg-footer-theme">
-<<<<<<< HEAD
-          <div
-            class="flex flex-wrap justify-between py-2 px-6 flex-md-row flex-column"
-          >
-            <div class="mb-2 mb-md-0">
-              <span class="Text_Secondary"
-                >Copyright © 2024
-                <a class="footer-link Text_Main font-medium">TSR Darashaw</a>
-              </span>
-=======
-            <div class="flex flex-wrap justify-between py-2 px-6 flex-md-row flex-column ">
-              <div class="mb-2 mb-md-0">
-                <span class='Text_Secondary'>Copyright © 2024 <a class="footer-link Text_Main font-medium">TSR Darashaw</a> </span>
-              </div>
-              <div class="d-none d-lg-inline-block">
-                <a class="footer-link Text_Main me-4" >Privacy Policy</a>
-                <a class="footer-link Text_Main" >Terms and Conditions</a>
-              </div>
->>>>>>> 46c0bcc0ffece20550405d66cecb4c52c470901a
-            </div>
-            <div class="d-none d-lg-inline-block">
-              <a class="footer-link Text_Main me-4">Privacy Policy</a>
-              <a class="footer-link Text_Main">Terms and Conditions</a>
-            </div>
-          </div>
-        </footer>
-      </div>
-    </div>
-    <aside
-      id="layout-menu"
-<<<<<<< HEAD
-      class="w-64 duration-300 relative bg-white layout-menu menu-vertical menu bg-menu-theme"
-    >
-=======
-      class= "w-52 hideContainer duration-300 relative bg-white layout-menu menu-vertical menu bg-menu-theme">
->>>>>>> 46c0bcc0ffece20550405d66cecb4c52c470901a
-      <!-- <img
-        src="../../../assets/images/sidebar/bxs-chevron-left.png"
-        class= "absolute cursor-pointer rounded-full z-10  -right-3 top-4 w-10 border-8  border-f1eee9"/> -->
-      <!-- <div class="flex gap-x-4 justify-center item-center p-2 py-2">
-        <div
-          class="origin-left w-full h-20 imagelogo cursor-pointer duration-300"
-        ></div>
-      </div> -->
-      <div class="my-5">
-        <div class="flex justify-center">
-          <!-- <div
-                class="origin-left w-full h-10 imagelogo cursor-pointer duration-300"
-              ></div> -->
-            <div class="border-2 border-bg-yellow-300 bg-yellow-900 rounded-full p-6">
-              <span class="text-2xl w-full text-center">JP</span>
-            </div>
-        </div>
-        <div>
-          <p class="text-xl w-full text-center mb-2">USERNAME</p>
-          <p class="text-sm w-full text-center mb-2">(Employee Role)</p>
-          <p class="text-xs text-center">Last Login : 10-Sep-2024</p>
-        </div>
-      </div>
-      <div class="mt-5">
-        <ul class="menu-inner py-1 ps scrollcontainer">
-<<<<<<< HEAD
-          <li
-            *ngFor="let data of MENULIST"
-            class="menu-item w-full"
-            [ngClass]="[data.IS_SELECTED === true ? 'active' : '']"
-          >
-            <div class="menu-link">
-              <i class="menu-icon pi {{ data.ICON }}"></i>
-              <div class="w-full">
-                <div class="text-truncate">
-                  {{ data.MODULE_DESCRIPTION }}
+      <div class=" flex">
+        <aside class="w-1/6 my-3 h-fit">
+          <div id="layout-menu"
+            class="w-full h-screen hideContainer duration-300 relative bg-white layout-menu menu-vertical menu bg-menu-theme">
+            <div class="">
+              <div class="flex justify-center ">
+                <div class="border-2 border-bg-yellow-300 bg-yellow-900 rounded-full p-4 mt-5">
+                  <span class="text-xl w-full text-center">JP</span>
                 </div>
               </div>
+              <div>
+                <p class="text-lg w-full text-center mb-1 mt-1">USERNAME</p>
+                <p class="text-sm w-full text-center ">(Employee Role)</p>
+                <p class="text-xs text-center">Last Login : 10-Sep-2024</p>
+              </div>
             </div>
-          </li>
-
-=======
-            <li *ngFor="let data of MENULIST;let i=index;"  class="menu-item w-full" 
-             [ngClass]="[ data.IS_SELECTED === true ? 'active' : '' ]">
-                <div class="menu-link " (click)="setHighlighted(data, i, data.MODULE_DESCRIPTION);">
+            <div class="mt-5">
+              <ul class="menu-inner py-1 ps scrollcontainer">
+                <li *ngFor="let data of MENULIST;let i=index;" class="menu-item w-full"
+                  [ngClass]="[ data.IS_SELECTED === true ? 'active' : '' ]">
+                  <div class="menu-link " (click)="setHighlighted(data, i, data.MODULE_DESCRIPTION);">
                     <i class="menu-icon pi {{data.ICON}}"></i>
-                    <div class=" w-full" >
+                    <div class=" w-full">
                       <div class="text-truncate">
                         {{data.MODULE_DESCRIPTION}}
                       </div>
                     </div>
-                </div>
-                <ul class="dropdown" *ngIf="isShowSubMenu"
-                 [ngClass]="[ data.IS_SELECTED === true ? 'menu-sub' : '' ]">
-                  <li *ngFor="let subdata of data.DETAIL;let j=index;"  class="menu-item" 
-                  [ngClass]="[ subdata.IS_SELECTED === true ? 'active' : '' ]">
-                     <div class="menu-link ">
-                         <!-- <i class="menu-icon pi {{data.ICON}}"></i> -->
-                         <div class=" w-full" >
-                           <div class="text-truncate">
-                             {{subdata.FUNCTION_DESC}}
-                           </div>
-                         </div>
-                     </div>
-                 </li>
-                </ul>
-            </li>
->>>>>>> 46c0bcc0ffece20550405d66cecb4c52c470901a
-          <div class="cover-bar"></div>
-        </ul>
+                  </div>
+                  <ul class="dropdown" *ngIf="isShowSubMenu"
+                    [ngClass]="[ data.IS_SELECTED === true ? 'menu-sub' : '' ]">
+                    <li *ngFor="let subdata of data.DETAIL;let j=index;" class="menu-item"
+                      [ngClass]="[ subdata.IS_SELECTED === true ? 'active' : '' ]">
+                      <div class="menu-link ">
+                        <div class=" w-full">
+                          <div class="text-truncate">
+                            {{subdata.FUNCTION_DESC}}
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <div class="cover-bar"></div>
+              </ul>
+            </div>
+          </div>
+        </aside>
+        <div class='w-5/6 my-3 ml-5'>
+          <div>
+            <router-outlet></router-outlet>
+          </div>
+          <!-- footer section -->
+          <footer class="content-footer footer bg-footer-theme fixed w-4/5">
+            <div class="flex flex-wrap justify-between py-2 px-6 flex-md-row flex-column ">
+              <div class="mb-2 mb-md-0">
+                <span class='Text_Secondary'>Copyright © 2024 <a class="footer-link Text_Main font-medium">TSR
+                    Darashaw</a> </span>
+              </div>
+              <div class="d-none d-lg-inline-block">
+                <a class="footer-link Text_Main me-4">Privacy Policy</a>
+                <a class="footer-link Text_Main">Terms and Conditions</a>
+              </div>
+            </div>
+          </footer>
+        </div>
       </div>
-    </aside>
+    </div>
   </div>
 </div>
