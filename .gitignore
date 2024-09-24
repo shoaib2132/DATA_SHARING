@@ -50,3 +50,6 @@ yarn-error.log
 /package-lock.json
 *.tsbuildinfo
  
+# Ignore chunk files
+*.chunk.js
+*.chunk.css

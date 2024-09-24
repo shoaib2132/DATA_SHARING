@@ -2,6 +2,7 @@
     <div class="w-2/5">
         <div class="mx-auto  imageaside">
           <img class="mx-auto h-10 w-64 imageasidelogo "  >
+          
           <!-- <div class="mx-auto h-8 w-full imageasidelogo"></div> -->
             <h3 class="asideText">Welcome to
               <b>TATA PLAY </b>Employee Self Service Portal
@@ -11,6 +12,11 @@
     </div>
     <div class="w-3/5 px-6 py-12 lg:px-8 shadow-md">
         <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+            <img  *ngIf="bankName === 'axsis'" class="mx-auto h-fit w-auto imagelogo "
+            [src]=SharedService.base64 alt="No image found">
+            <img  *ngIf="bankName === 'tataplay'" class="mx-auto h-fit w-auto imagelogo"
+            [src]=SharedService.base642 alt="No image found">
+           
             <h2 class="mt-8 text-2xl font-normal leading-9 tracking-tight text-blue-800">Log in to access your account</h2>
         </div> 
         <div class="sm:mx-auto sm:w-full sm:max-w-sm">

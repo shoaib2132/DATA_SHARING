@@ -12,11 +12,11 @@ import { UserLayoutComponent } from '../Common/Layout-Page/user-layout/user-layo
 import { UserDashboardComponent } from '../Common/Dashboard/admin-dashboard/user-dashboard/user-dashboard.component';
 import { AdminDashboardComponent } from '../Common/Dashboard/admin-dashboard/admin-dashboard.component';
 import { ClientPageComponent } from './Masters/client-page/client-page.component';
+import { ClientLoginComponent } from '../Common/Login-Page/client-login/client-login.component';
 export const routes: Routes = [
     { path: '', redirectTo: 'admin/login', pathMatch: 'full' },
     { path: 'user/login', component: UserLoginComponent },
-    { path: 'user/login/tataplay', component: UserLoginComponent },
-    { path: 'user/login/axsis', component: UserLoginComponent },
+    { path: 'user/login/:bankName', component: ClientLoginComponent },
     { path: 'user/forgetpassword', component: UserForgetPasswordComponent },
     {
         path: 'user', 
