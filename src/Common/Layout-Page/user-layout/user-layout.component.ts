@@ -1,15 +1,24 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterOutlet } from '@angular/router';
+import { ButtonModule } from 'primeng/button';
+import { ChipsModule } from 'primeng/chips';
+import { InputGroupModule } from 'primeng/inputgroup';
+import { InputGroupAddonModule } from 'primeng/inputgroupaddon';
+import { InputTextModule } from 'primeng/inputtext';
 import { OverlayPanelModule } from 'primeng/overlaypanel';
 @Component({
   selector: 'app-user-layout',
   standalone: true,
-  imports: [RouterOutlet,OverlayPanelModule,CommonModule],
+  imports: [RouterOutlet,OverlayPanelModule,CommonModule,OverlayPanelModule, 
+    InputGroupModule, InputGroupAddonModule, ButtonModule, InputTextModule, ChipsModule],
   templateUrl: './user-layout.component.html',
   styleUrl: './user-layout.component.css'
 })
 export class UserLayoutComponent {
+  
   MENULIST=[
     {
         "MODULE_CODE": "DASHBOARD",
@@ -90,5 +99,18 @@ export class UserLayoutComponent {
   "DETAIL": []
 }
 ]
+isShowSubMenu:boolean = false;
+
+setHighlighted = (items: any, idx: any, name: string) => {
+  this.isShowSubMenu = false;
+  
+  this.MENULIST.forEach((element:any) => {
+    if(items.SEQ_NO === element.SEQ_NO){ 
+      this.isShowSubMenu = !this.isShowSubMenu;
+      items.IS_SELECTED=true;
+    }
+  });
+  console.log("items ==>",items,name)
+}
 
 }

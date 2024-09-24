@@ -7,34 +7,37 @@ import { AdminLoginComponent } from '../Common/Login-Page/admin-login/admin-logi
 import { UserLoginComponent } from '../Common/Login-Page/user-login/user-login.component';
 import { AdminForgetPasswordComponent } from '../Common/Login-Page/admin-forget-password/admin-forget-password.component';
 import { UserForgetPasswordComponent } from '../Common/Login-Page/user-forget-password/user-forget-password.component';
-import { AdminDashboardComponent } from '../Common/Dashboard-Page/admin-dashboard/admin-dashboard.component';
-import { UserDashboardComponent } from '../Common/Dashboard-Page/admin-dashboard/user-dashboard/user-dashboard.component';
 import { UserLayoutComponent } from '../Common/Layout-Page/user-layout/user-layout.component';
-import { ClientPageComponent } from './Masters/client-page/client-page.component';
+
+import { UserDashboardComponent } from '../Common/Dashboard/admin-dashboard/user-dashboard/user-dashboard.component';
+import { AdminDashboardComponent } from '../Common/Dashboard/admin-dashboard/admin-dashboard.component';
+import { ClientListComponent } from './Master/client-list/client-list.component';
+
 
 export const routes: Routes = [
-  { path: '', redirectTo: 'admin/login', pathMatch: 'full' },
-  {
-    path: 'user',
-    canActivate: [userAuthGuard],
-    component: UserLayoutComponent,
-    children: [
-      { path: 'login', component: UserLoginComponent },
-      { path: 'dashboard', component: UserDashboardComponent },
-      { path: 'userforgetpassword', component: UserForgetPasswordComponent },
-    ],
-  },
-  {
-    path: 'admin',
-    canActivate: [authGuard],
-    component: AdminLayoutComponent,
-    children: [
-      { path: 'login', component: AdminLoginComponent },
-      { path: 'dashboard', component: AdminDashboardComponent },
-      { path: 'forgetpassword', component: AdminForgetPasswordComponent },
-      { path: 'clientpage', component: ClientPageComponent },
-    ],
-  },
+    { path: '', redirectTo: 'admin/login', pathMatch: 'full' },
+    { path: 'user/login', component: UserLoginComponent },
+    {
+        path: 'user', 
+        canActivate:[userAuthGuard],
+        component: UserLayoutComponent,
+        children: [
+      
+          { path: 'dashboard', component: UserDashboardComponent },
+          { path: 'forgetpassword', component: UserForgetPasswordComponent },
+          { path: 'clientpagelist', component: ClientListComponent },
+      ]},
+      {
+        path: 'admin', 
+        canActivate:[authGuard],
+        component: AdminLayoutComponent,
+        children: [
+          { path: 'login', component: AdminLoginComponent },
+          { path: 'dashboard', component: AdminDashboardComponent },
+          { path: 'forgetpassword', component: AdminForgetPasswordComponent },
+         
+        ]}
+    
 ];
 
 @NgModule({
