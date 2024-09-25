@@ -14,7 +14,7 @@ import { AdminDashboardComponent } from '../Common/Dashboard/admin-dashboard/adm
 import { ClientPageComponent } from './Masters/client-page/client-page.component';
 import { ClientLoginComponent } from '../Common/Login-Page/client-login/client-login.component';
 export const routes: Routes = [
-    { path: '', redirectTo: 'admin/login', pathMatch: 'full' },
+    { path: '', redirectTo: 'user/login', pathMatch: 'full' },
     { path: 'user/login', component: UserLoginComponent },
     { path: 'user/login/:bankName', component: ClientLoginComponent },
     { path: 'user/forgetpassword', component: UserForgetPasswordComponent },
