@@ -16,7 +16,7 @@ ImageView:boolean = false;
 ImageView1:boolean = false;
 RouterUrl:any;
 bankName: string | null = null;
-currentPage:any;
+
 
   constructor(private router: Router,public SharedService:SharedService,private ActivatedRoute:ActivatedRoute){
   }
