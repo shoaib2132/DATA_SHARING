@@ -26,7 +26,6 @@ export const routes: Routes = [
       
     // { path: 'login/:client', component: ClientLoginComponent },
           { path: 'dashboard', component: UserDashboardComponent },
-          
           { path: 'clientpage', component: ClientPageComponent },
       ]},
       {

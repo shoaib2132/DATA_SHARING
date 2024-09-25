@@ -12,7 +12,7 @@ import { OverlayPanelModule } from 'primeng/overlaypanel';
 @Component({
   selector: 'app-user-layout',
   standalone: true,
-  imports: [RouterOutlet,OverlayPanelModule,CommonModule,OverlayPanelModule, 
+  imports: [RouterOutlet,OverlayPanelModule,CommonModule, 
     InputGroupModule, InputGroupAddonModule, ButtonModule, InputTextModule, ChipsModule],
   templateUrl: './user-layout.component.html',
   styleUrl: './user-layout.component.css'

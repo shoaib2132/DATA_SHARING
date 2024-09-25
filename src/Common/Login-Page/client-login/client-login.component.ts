@@ -31,6 +31,9 @@ export class ClientLoginComponent {
     forgetPasswordFun(){
       this.router.navigate(['/user/forgetpassword']);
     }
+    signInFun(){
+      this.router.navigate(['/user/dashboard']);
+    }
   
   
 }
