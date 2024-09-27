@@ -8,11 +8,11 @@ import { UserLoginComponent } from '../Common/Login-Page/user-login/user-login.c
 import { AdminForgetPasswordComponent } from '../Common/Login-Page/admin-forget-password/admin-forget-password.component';
 import { UserForgetPasswordComponent } from '../Common/Login-Page/user-forget-password/user-forget-password.component';
 import { UserLayoutComponent } from '../Common/Layout-Page/user-layout/user-layout.component';
-
 import { UserDashboardComponent } from '../Common/Dashboard/admin-dashboard/user-dashboard/user-dashboard.component';
 import { AdminDashboardComponent } from '../Common/Dashboard/admin-dashboard/admin-dashboard.component';
-import { ClientPageComponent } from './Masters/client-page/client-page.component';
+
 import { ClientLoginComponent } from '../Common/Login-Page/client-login/client-login.component';
+import { ClientMasterComponent } from './Masters/client-master/client-master.component';
 export const routes: Routes = [
     { path: '', redirectTo: 'admin/login', pathMatch: 'full' },
     { path: 'user/login', component: UserLoginComponent },
@@ -26,8 +26,7 @@ export const routes: Routes = [
       
     // { path: 'login/:client', component: ClientLoginComponent },
           { path: 'dashboard', component: UserDashboardComponent },
-          
-          { path: 'clientpage', component: ClientPageComponent },
+          { path: 'clientmaster', component: ClientMasterComponent },
       ]},
       {
         path: 'admin', 
@@ -37,7 +36,6 @@ export const routes: Routes = [
           { path: 'login', component: AdminLoginComponent },
           { path: 'dashboard', component: AdminDashboardComponent },
           { path: 'forgetpassword', component: AdminForgetPasswordComponent },
-         
         ]}
     
 ];

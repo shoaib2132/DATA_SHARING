@@ -98,6 +98,7 @@ export class UserLayoutComponent {
   "MENU_TYPE": "",
   "DETAIL": []
 }
+
 ]
 isShowSubMenu:boolean = false;
 

@@ -9,3 +9,23 @@
     outline: 0 !important;
    
 }
+
+.p-calendar,
+.p-dropdown,
+.p-multiselect{
+    width: 100%;
+}
+.p-dropdown .p-inputtext,.p-multiselect .p-multiselect-label{ 
+    border: 0 !important;
+ }
+ .p-dropdown,.p-multiselect{
+    border: 1px solid #babdc1 !important;
+ }
+ .p-multiselect .p-multiselect-label {
+    font-size: 14px !important;
+    padding: 5px 10px !important;
+    font-weight: 400 !important;
+    font-family: "Roboto", sans-serif !important;
+    width: 100%;
+    outline: 0 !important;
+ }

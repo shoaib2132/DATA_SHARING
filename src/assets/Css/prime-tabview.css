@@ -1,9 +1,3 @@
-.p-tabview .p-tabview-nav li .p-tabview-nav-link:not(.p-disabled):focus {
-    outline: 0 none;
-    outline-offset: 0;
-    box-shadow: none !important;
-}
-
 /* card css */
 .p-card {
     box-shadow: 0 .1875rem .5rem 0 rgba(34,48,62,.1) !important;
@@ -18,21 +12,4 @@
 }
 .p-card .p-card-content {
     padding: 0.8rem 0 !important;
-}
-.icon-shape .pi{
-    font-size: 26px !important;
-}
-
-
-/* .timeline-card .p-card-content{
-    display: flex !important;
-
-} */
-
-
-
-/* timeline */
-.p-timeline-left .p-timeline-event-opposite {
-    text-align: right;
-    display: none !important;
 }

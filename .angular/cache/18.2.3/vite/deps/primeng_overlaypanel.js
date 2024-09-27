@@ -7,15 +7,23 @@ import {
 } from "./chunk-5D5RAQYV.js";
 import {
   TimesIcon
-} from "./chunk-CRSU2B2R.js";
+} from "./chunk-UG43CMEC.js";
 import {
   Ripple,
   RippleModule
-} from "./chunk-YI6IWC32.js";
+} from "./chunk-57ZEQV2X.js";
+import "./chunk-VO3XVT2N.js";
 import {
   ConnectedOverlayScrollHandler,
   DomHandler
-} from "./chunk-JPG43RVS.js";
+} from "./chunk-QU7AFVGG.js";
+import {
+  OverlayService,
+  PrimeNGConfig,
+  PrimeTemplate,
+  SharedModule,
+  zindexutils
+} from "./chunk-P3OLHPFZ.js";
 import {
   CommonModule,
   DOCUMENT,
@@ -25,13 +33,6 @@ import {
   NgTemplateOutlet,
   isPlatformBrowser
 } from "./chunk-X7PCTTRX.js";
-import {
-  OverlayService,
-  PrimeNGConfig,
-  PrimeTemplate,
-  SharedModule,
-  zindexutils
-} from "./chunk-P3OLHPFZ.js";
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
