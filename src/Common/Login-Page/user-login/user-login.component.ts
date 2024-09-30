@@ -3,6 +3,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { InputTextModule } from 'primeng/inputtext';
 import { SharedService } from '../../../Service/shared.service';
 import { CommonModule } from '@angular/common';
+import { log } from 'console';
 @Component({
   selector: 'app-user-login',
   standalone: true,
@@ -24,7 +25,8 @@ bankName: string | null = null;
     this.RouterUrl = this.ActivatedRoute.url;
     this.ActivatedRoute.params.subscribe(params => {
       this.bankName = params['bankName'];
-      // console.log('bankName ->' , this.bankName)
+       console.log('bankName ->' , this.bankName)
+      
     });
    }
 
