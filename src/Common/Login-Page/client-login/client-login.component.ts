@@ -6,11 +6,12 @@ import { CommonModule } from '@angular/common';
 import { ApiService } from '../../../Service/api.service';
 import { UrlService } from '../../../Service/url.service';
 import { HttpClient } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-client-login',
   standalone: true,
-  imports: [InputTextModule, CommonModule],
+  imports: [InputTextModule, CommonModule,FormsModule ],
   templateUrl: './client-login.component.html',
   styleUrl: './client-login.component.css'
 })
@@ -21,6 +22,8 @@ export class ClientLoginComponent {
   RouterUrl: any;
   bankName: string | null = null;
   logo:any;
+  EMAIL_ID:any;
+  Password:any;
   constructor(private router: Router, public SharedService: SharedService, private ActivatedRoute: ActivatedRoute,private urlService: UrlService,private apiService:ApiService ) {
   }
   ngOnInit() {
@@ -45,6 +48,19 @@ export class ClientLoginComponent {
      console.log(this.logo);
       
     })
+  }
+
+  login(){
+    let data={
+      "EMAIL_ID":this.EMAIL_ID,
+      "Password":this.Password
+    }
+    this.apiService.post(`${this.urlService.login}`,data).then((res:any)=>{
+      // console.log('res',res);
+      
+       console.log('res',res);
+       
+     })
   }
 }
 
