@@ -1,15 +1,20 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
-
+import * as CryptoJS from 'crypto-js';
+// import { config } from 'process';
+import * as config from '../Common/config/lock.config'; 
 @Injectable({
   providedIn: 'root'
 })
 export class ApiService {
 
-  constructor( public http: HttpClient,private router: Router) { }
+  constructor( private http: HttpClient,private router: Router) { }
   interval:any
   timeLeft:any
+
+  private key1 = CryptoJS.enc.Utf8.parse(config.rsa.key.EncryptKey);
+  private iv = CryptoJS.enc.Utf8.parse(config.rsa.key.EncryptIV);
   
   getApiPath(address: any) {
     return address;
@@ -22,9 +27,9 @@ export class ApiService {
     if (!sessionStorage.getItem("token")) {
       sessionStorage.setItem("token","");
     }
- 
+    data=this.encrypt(data);
     return new Promise((resolve, reject) => {
-      return this.http.post(url, data, { headers: { "Authorization": "Bearer " + sessionStorage.getItem("token") } }).subscribe(
+      return this.http.post(url, data, { headers: {  'Content-Type': 'application/json' } }).subscribe(
         data => {
           resolve(data);
         },
@@ -108,11 +113,28 @@ export class ApiService {
       }
       else {
         localStorage.clear();
-    this.router.navigate([`/login`]);
+  //  this.router.navigate([`/login`]); commented by hemnant 27-09-24
     clearInterval(this.interval)
   
       }
     },1000)
+  }
+
+  encrypt(text: any) {
+    text = JSON.stringify(text)
+    var encrypted = CryptoJS.AES.encrypt(CryptoJS.enc.Utf8.parse(text), this.key1, {
+      keySize: 128 / 8,
+      iv: this.iv,
+      mode: CryptoJS.mode.CBC,
+      padding: CryptoJS.pad.Pkcs7
+    });
+    let data = {
+      data:  encrypted.toString()
+    }
+    var encryptData = JSON.stringify(data)
+    return encryptData;
+    // return text;
+
   }
 
 }

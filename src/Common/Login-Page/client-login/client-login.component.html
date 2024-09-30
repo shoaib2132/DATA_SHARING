@@ -13,7 +13,7 @@
     <div class="w-3/5 px-6 py-12 lg:px-8 shadow-md">
         <div class="sm:mx-auto sm:w-full sm:max-w-sm">
             <img  *ngIf="bankName === 'axis'" class="w-64 imagelogo "
-            [src]=SharedService.base64 alt="No image found">
+            [src]="this.logo" alt="No image found">
             <img  *ngIf="bankName === 'tataplay'" class="w-64 imagelogo"
             [src]=SharedService.base642 alt="No image found">
            
